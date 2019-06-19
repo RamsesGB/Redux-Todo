@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import rootReducer from './Reducers/index';
+import { taskListReducer } from './Reducers/index';
 
-const store = createStore(rootReducer); 
+const store = createStore(taskListReducer); 
 
 ReactDOM.render(
     <Provider store={store}>
